@@ -12,7 +12,7 @@ class ProgramStudi:
     # ATRIBUT
     __nama_prodi = ""
     __kode = ""
-    __courses:Course = []
+    __courses = []
 
     # METHOD
     # Constructor
@@ -34,9 +34,11 @@ class ProgramStudi:
         self.__kode = kode
 
     # Function untuk menambahkan objek Course baru ke dalam list of Objects Course
-    def addCourse(self, namaMatkul, jml):
-        matkulBaru = Course(namaMatkul, jml)
-        self.__courses.append(matkulBaru)
+    def addCourse(self, a:Course):
+        
+        listTemp = self.__courses.copy()
+        listTemp.append(a)
+        self.__courses = listTemp
 
     # Function yang mencetak isi list of Objects Courses dengan data-datanya
     def getCourses(self):
