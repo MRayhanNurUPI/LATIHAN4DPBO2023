@@ -13,10 +13,10 @@ Program ini menggunakan total 6 kelas yang terdiri dari:
 2. Kelas SivitasAkademik -> Child dari Kelas Human serta Parent Class dari Kelas Dosen dan Mahasiswa
 3. Kelas Dosen -> Child dari Kelas SivitasAkademik
 4. Kelas Mahasiswa -> Child dari Kelas SivitasAkademik
-5. Kelas ProgramStudi -> Komposisi dengan Kelas Sivitas Akademik (_SivitasAkademik "has a" ProgramStudi)
-6. Kelas Course -> Komposisi dengan Kelas ProgramStudi (_ProgramStudi "has a" Course)
+5. Kelas ProgramStudi -> Komposisi dengan Kelas Sivitas Akademik (_SivitasAkademik "has a" ProgramStudi_)
+6. Kelas Course -> Komposisi dengan Kelas ProgramStudi (_ProgramStudi "has a" Course_)
 
-(*Note : Pada program C++, atribut ProgramStudi pada kelas SivitasAkademik menggunakan pointer agar list Course dari ProgramStudi akan selalu ter-update ketika menambahkan Course baru ke dalam list Course)
+(_*Note : Pada program C++, atribut ProgramStudi pada kelas SivitasAkademik menggunakan pointer agar list Course dari ProgramStudi akan selalu ter-update ketika menambahkan Course baru ke dalam list Course_)
 
 ## Alur Program
 1) Mendeklarasi List Mahasiswa dan List Dosen
